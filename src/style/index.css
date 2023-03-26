@@ -1,0 +1,100 @@
+/* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+:root{
+    background-color: black;
+    font: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffdd00;
+    text-align: center;
+    --transition: .5s;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.margin-bottom-10{
+    margin-bottom: 20px;
+}
+
+.sem-margin{
+    margin: 0px !important;
+}
+
+
+.tela-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.cartao-perfil{
+    width: 400px;
+    height: max-content;
+    padding: 44px 22px;
+    background-color: rgba(255, 255, 255, .1);
+    border: 1px solid #ffdd00;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
+}
+
+.cabecalho-perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.image-perfil{
+    width: 40%;
+    border-radius: 100%;
+    border: 1px solid #ffdd00;
+}
+
+.text-perso{
+    font-size: 1.5rem;
+}
+
+/* CARD BODY */
+.button{
+    display: flex;
+    justify-content: center;
+    height: 1.2rem;
+    padding: 15px 0px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, .1);
+    border: 1px solid #ffdd00;
+    border-radius: 35px;
+    text-decoration: none;
+    clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
+    transition: ease-out var(--transition);
+}
+
+.button:hover{
+    border: 1px solid #c8ad00;
+    transition: ease-in var(--transition);
+}
+
+.button:hover .icone{
+    color: #c68e00;
+    transition: ease-in var(--transition);
+}
+
+.conteudo-button{
+    position: relative;
+    top: 0%;
+    transition: ease-out var(--transition);
+}
+
+.icone{
+    font-size: 1.2rem;
+    color: #ffdd00;
+    margin-bottom: 1.2rem;
+}
+
+
